@@ -1,0 +1,11 @@
+C:\Users\darias\source\repos\OrderAlgorithms\OrderAlgorithms\bin\Debug\OrderAlgorithms.exe.config
+C:\Users\darias\source\repos\OrderAlgorithms\OrderAlgorithms\bin\Debug\OrderAlgorithms.exe
+C:\Users\darias\source\repos\OrderAlgorithms\OrderAlgorithms\bin\Debug\OrderAlgorithms.pdb
+C:\Users\darias\source\repos\OrderAlgorithms\OrderAlgorithms\bin\Debug\OrderAlgorithms.xml
+C:\Users\darias\source\repos\OrderAlgorithms\OrderAlgorithms\obj\Debug\OrderAlgorithms.vbprojAssemblyReference.cache
+C:\Users\darias\source\repos\OrderAlgorithms\OrderAlgorithms\obj\Debug\OrderAlgorithms.Resources.resources
+C:\Users\darias\source\repos\OrderAlgorithms\OrderAlgorithms\obj\Debug\OrderAlgorithms.vbproj.GenerateResource.cache
+C:\Users\darias\source\repos\OrderAlgorithms\OrderAlgorithms\obj\Debug\OrderAlgorithms.vbproj.CoreCompileInputs.cache
+C:\Users\darias\source\repos\OrderAlgorithms\OrderAlgorithms\obj\Debug\OrderAlgorithms.exe
+C:\Users\darias\source\repos\OrderAlgorithms\OrderAlgorithms\obj\Debug\OrderAlgorithms.xml
+C:\Users\darias\source\repos\OrderAlgorithms\OrderAlgorithms\obj\Debug\OrderAlgorithms.pdb
