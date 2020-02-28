@@ -1,13 +1,13 @@
 ﻿Public Class Mio
 
-    Public algo1, algo2, algo3 As String
-    Public Sub New()
+    'Public algo1, algo2, algo3 As String
+    'Public Sub New()
 
-    End Sub
+    'End Sub
 
-    Public Sub New(algo As String)
-        Me.New()
-    End Sub
+    'Public Sub New(algo As String)
+    '    Me.New()
+    'End Sub
 
     Public Shared Sub GetMaxAndMin(ByRef arr As Integer(), n As Integer)
         arr = SortMio(arr)

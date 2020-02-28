@@ -1,6 +1,4 @@
-﻿Imports OrderAlgorithms
-
-Public Class QuickSort : Implements ISorter
+﻿Public Class QuickSort : Implements ISorter
     Public Function Sort(array As Integer()) As Integer() Implements ISorter.Sort
         Dim orderedArr = _QuickSort(array, 0, array.Length - 1)
 

@@ -1,6 +1,4 @@
-﻿Imports OrderAlgorithms
-
-Public Class MergeSort : Implements ISorter
+﻿Public Class MergeSort : Implements ISorter
     Public Function Sort(array As Integer()) As Integer() Implements ISorter.Sort
         Dim orderedArr = _MergeSort(array, 0, array.Length - 1)
 
