@@ -63,4 +63,32 @@
         Return True
     End Function
 
+    Public Sub OrderArrayRecursively(ByRef arr)
+
+    End Sub
+
+
+    Public Function DoWork()
+        Throw New NotImplementedException
+    End Function
+
+    Public Function Method1()
+        Try
+            DoWork()
+        Catch ex As NotImplementedException
+            Throw New InvalidOperationException()
+        End Try
+    End Function
+
+    Public Function Method2()
+        Try
+            DoWork()
+        Catch ex As Exception
+            Throw ex
+        End Try
+    End Function
+
+
+
+
 End Class

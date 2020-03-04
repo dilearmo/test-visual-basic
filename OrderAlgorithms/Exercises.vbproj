@@ -91,6 +91,7 @@
     <Compile Include="MergeSort.vb" />
     <Compile Include="Mio.vb" />
     <Compile Include="QuickSort.vb" />
+    <Compile Include="Recursividad\PrintTriangularTree.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
