@@ -71,8 +71,10 @@
   <ItemGroup>
     <Compile Include="Graphs\GraphResolver.vb" />
     <Compile Include="Graphs\Node.vb" />
+    <Compile Include="Graphs\Tree.vb" />
     <Compile Include="ISorter.vb" />
     <Compile Include="Module1.vb" />
+    <Compile Include="ModuleTest.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
