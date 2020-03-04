@@ -42,7 +42,6 @@
         Dim arr() As Integer = {1, 3, 5, 4, 2}
         Mio.GetMaxAndMin(arr, 4)
 
-
         Mio.AreIsomorph("COCO", "CACA")
 
         Mio.CuadroMagico({"HOLA", "OLLA", "LLAR", "AARO"})
