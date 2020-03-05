@@ -74,7 +74,6 @@
     <Compile Include="Graphs\Tree.vb" />
     <Compile Include="ISorter.vb" />
     <Compile Include="Module1.vb" />
-    <Compile Include="ModuleTest.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -92,6 +91,7 @@
     </Compile>
     <Compile Include="MergeSort.vb" />
     <Compile Include="Mio.vb" />
+    <Compile Include="PracticaCursoVB\ExtensionModule.vb" />
     <Compile Include="QuickSort.vb" />
     <Compile Include="Recursividad\PrintTriangularTree.vb" />
   </ItemGroup>

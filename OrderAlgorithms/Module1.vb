@@ -26,17 +26,17 @@
             Node.IncludeNode(tree, i)
         Next
 
-        Dim profundidad As Integer = GraphResolver.CalcularProfundidad(tree)
-        Dim anchura As Integer = GraphResolver.CalcularAnchura(tree)
+        'Dim profundidad As Integer = GraphResolver.CalcularProfundidad(tree)
+        'Dim anchura As Integer = GraphResolver.CalcularAnchura(tree)
 
-        Dim sumaPorNiveles = GraphResolver.SumatoriaPorNivel(tree)
-        For i = 0 To sumaPorNiveles.Count - 1
-            Console.WriteLine($"Nivel {i + 1}: {sumaPorNiveles(i)}")
-        Next
+        'Dim sumaPorNiveles = GraphResolver.SumatoriaPorNivel(tree)
+        'For i = 0 To sumaPorNiveles.Count - 1
+        '    Console.WriteLine($"Nivel {i + 1}: {sumaPorNiveles(i)}")
+        'Next
 
-        Dim sumaNivelX = GraphResolver.SumatoriaNivelX(tree, 2)
+        'Dim sumaNivelX = GraphResolver.SumatoriaNivelX(tree, 2)
 
-        Console.ReadLine()
+        'Console.ReadLine()
 
         ''''''' Obtener 5 mayor valor del arbol
         'Dim list As New List(Of Integer)
@@ -71,6 +71,21 @@
         'Mio.CuadroMagico({"HOLA", "OLLA", "LLAR", "AARO"})
 
         'Console.WriteLine()
+
+        'Dim nodeTest = New Node With {.Value = 8, .LeftChild = New Node With {.Value = 98}}
+        'Dim copied As Node = nodeTest.Copy(nodeTest)
+        'nodeTest.Value = 40
+        'Console.WriteLine()
+
+        'Dim strList() As String = {"Uno", "Dos", "Tres", "Cuatro", "Cinco"}
+        'Dim objList As List(Of Node) = New List(Of Node)({New Node With {.Value = 5}, New Node With {.Value = 15}, New Node With {.Value = 50}})
+        'Dim strTable As DataTable = strList.ToTable()
+        'Dim objTable As DataTable = objList.ToTable()
+
+
+        Mio.PruebaExUsing()
+
+        Console.WriteLine()
 
     End Sub
 

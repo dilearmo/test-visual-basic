@@ -88,7 +88,11 @@
         End Try
     End Function
 
-
+    Public Shared Sub PruebaExUsing()
+        Using test As New DataTable
+            Throw New Exception("Error deprueba")
+        End Using
+    End Sub
 
 
 End Class
