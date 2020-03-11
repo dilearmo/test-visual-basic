@@ -78,6 +78,7 @@
     <Import Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TestExamen10.vb" />
     <Compile Include="Validator.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -116,6 +117,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Examen10\Examen10.vbproj">
+      <Project>{058acef7-c28e-46e7-9a4d-5b662d1bf0c3}</Project>
+      <Name>Examen10</Name>
+    </ProjectReference>
     <ProjectReference Include="..\OrderAlgorithms\Exercises.vbproj">
       <Project>{cf4d9919-f00c-4f12-8660-8e0c07d9dd5b}</Project>
       <Name>Exercises</Name>

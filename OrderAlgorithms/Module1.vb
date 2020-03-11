@@ -20,11 +20,11 @@
 
         'Console.WriteLine()
 
-        Dim tree As Node = Nothing
-        Dim vertices As Integer() = {10, 5, 2, 3, 6, 45, 8, 9, 12, 11, 98, 0, 54}
-        For Each i As Integer In vertices
-            Node.IncludeNode(tree, i)
-        Next
+        'Dim tree As Node = Nothing
+        'Dim vertices As Integer() = {10, 5, 2, 3, 6, 45, 8, 9, 12, 11, 98, 0, 54}
+        'For Each i As Integer In vertices
+        '    Node.IncludeNode(tree, i)
+        'Next
 
         'Dim profundidad As Integer = GraphResolver.CalcularProfundidad(tree)
         'Dim anchura As Integer = GraphResolver.CalcularAnchura(tree)
@@ -83,9 +83,36 @@
         'Dim objTable As DataTable = objList.ToTable()
 
 
-        Mio.PruebaExUsing()
+        'Mio.PruebaExUsing()
 
-        Console.WriteLine()
+#Region "Islas"
+
+        'Dim islasCompilado() As Integer = {0, 1, 0, 2, 1, 0, 1, 2, 3, 2, 1, 2, 1} '6
+        'Dim islas1() As Integer = {2, 0, 1, 3, 0, 1, 0, 0, 0} ' 4
+        'Dim islas2() As Integer = {7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2} '20
+        'Dim islas3() As Integer = {2, 0, 1, 3, 0, 2, 1, 1, 2} '7
+        'Dim islas4 As Integer() = {3, 1, 0, 2, 1, 2, 1, 1, 1, 1, 1, 1, 1} '4
+        'Dim islas5 As Integer() = {7, 0, 0, 0, 4, 2, 2, 0, 3, 0, 0, 2} '21
+        'Dim islas6 As Integer() = {7, 1, 2, 0, 4, 3, 2, 0, 3, 3, 0, 2} '15
+        'Dim islas7 As Integer() = {4, 0, 0, 0, 4, 3, 4, 0, 0, 0, 4} '25
+        'Dim cantPozos = Isla.ContarPozos(islas7)
+
+        'Console.WriteLine($"El total de pozos es {cantPozos}")
+
+        'Console.Read()
+#End Region
+
+
+#Region "Grafos"
+
+        Dim grafo = Graph.GetGraph()
+        grafo.Iterate()
+
+        Console.Read()
+
+#End Region
+
+
 
     End Sub
 

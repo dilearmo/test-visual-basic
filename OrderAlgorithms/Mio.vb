@@ -76,7 +76,7 @@
         Try
             DoWork()
         Catch ex As NotImplementedException
-            Throw New InvalidOperationException()
+            Throw New InvalidOperationException("ERROR", ex)
         End Try
     End Function
 

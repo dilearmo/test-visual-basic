@@ -1,42 +1,42 @@
 ﻿Public Class GraphResolver
 
-    Public Shared Sub InOrder(tree As Node)
+    Public Shared Sub PreOrder(tree As Node)
         If (tree IsNot Nothing) Then
             Console.WriteLine(tree.Value)
-            InOrder(tree.LeftChild)
-            InOrder(tree.RigthChild)
+            PreOrder(tree.LeftChild)
+            PreOrder(tree.RigthChild)
         End If
     End Sub
 
-    Public Shared Sub NiIdea(tree As Node)
+    Public Shared Sub PostOrder(tree As Node)
         If (tree IsNot Nothing) Then
-            NiIdea(tree.LeftChild)
-            NiIdea(tree.RigthChild)
+            PostOrder(tree.LeftChild)
+            PostOrder(tree.RigthChild)
             Console.WriteLine(tree.Value)
         End If
     End Sub
 
-    Public Shared Sub PreOrden(tree As Node, Optional ByRef arr As List(Of Integer) = Nothing)
+    Public Shared Sub InOrder(tree As Node, Optional ByRef arr As List(Of Integer) = Nothing)
         If (tree IsNot Nothing) Then
-            PreOrden(tree.LeftChild, arr)
+            InOrder(tree.LeftChild, arr)
             Console.WriteLine(tree.Value)
             If arr IsNot Nothing Then
                 arr.Add(tree.Value)
             End If
-            PreOrden(tree.RigthChild, arr)
+            InOrder(tree.RigthChild, arr)
         End If
     End Sub
 
-    Public Shared Sub PostOrder(tree As Node, Optional ByRef arr As List(Of Integer) = Nothing)
-        If (tree IsNot Nothing) Then
-            PostOrder(tree.RigthChild, arr)
-            Console.WriteLine(tree.Value)
-            If arr IsNot Nothing Then
-                arr.Add(tree.Value)
-            End If
-            PostOrder(tree.LeftChild, arr)
-        End If
-    End Sub
+    'Public Shared Sub PostOrder(tree As Node, Optional ByRef arr As List(Of Integer) = Nothing)
+    '    If (tree IsNot Nothing) Then
+    '        PostOrder(tree.RigthChild, arr)
+    '        Console.WriteLine(tree.Value)
+    '        If arr IsNot Nothing Then
+    '            arr.Add(tree.Value)
+    '        End If
+    '        PostOrder(tree.LeftChild, arr)
+    '    End If
+    'End Sub
 
 
     Public Shared Sub GetMaxNthValue(tree As Node, ByRef n As Integer, Optional ByRef result As Integer? = Nothing)
@@ -108,5 +108,4 @@
         End If
         Return result
     End Function
-
 End Class
