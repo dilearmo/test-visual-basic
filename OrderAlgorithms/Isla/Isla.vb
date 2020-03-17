@@ -81,4 +81,28 @@
         Return totalPozos
     End Function
 
+
+    Public Sub ValidarIslasJoel(listaIslas As Integer())
+        Dim nivel = 0
+        Dim posminimoInicial = 0
+        Dim posMinimoFinal = listaIslas.Length - 1
+        Dim cantidadPozos = 0
+        Dim max = listaIslas.Max()
+        While nivel < max
+            While listaIslas(posminimoInicial) < nivel + 1 'adelanto posiciones mientras encuentro un valor inicial alto o mayor a mi nivel
+                posminimoInicial += 1
+            End While
+            While listaIslas(posMinimoFinal) <= nivel 'atraso posiciones mientras encuentro un valor final alto o que cumpla con el nivel
+                posMinimoFinal -= 1
+            End While
+            For x = posminimoInicial To posMinimoFinal 'recorro el nivel
+                If listaIslas(x) <= nivel Then
+                    cantidadPozos += 1
+                End If
+            Next
+            nivel += 1
+        End While
+        Console.WriteLine("validar islas 2 cantidad de pozos " + cantidadPozos.ToString)
+    End Sub
+
 End Class

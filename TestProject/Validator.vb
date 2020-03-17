@@ -28,5 +28,4 @@ Public Class Validator
         Assert.AreEqual(expectedResult, expectedResult)
     End Sub
 
-
 End Class

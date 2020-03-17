@@ -16,6 +16,6 @@ End Class
 Public Enum Genero
     <Description("Femenino")>
     Femenino = 1
-    <Description("Masculini")>
+    <Description("Masculino")>
     Masculino = 0
 End Enum

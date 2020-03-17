@@ -108,12 +108,32 @@
         Dim grafo = Graph.GetGraph()
         grafo.Iterate()
 
+
+        Billetes(65825)
+
         Console.Read()
 
 #End Region
 
 
 
+    End Sub
+
+    Public Sub Billetes(monto As Integer)
+        Dim billetes As Integer() = {5000, 2000, 1000, 500, 100, 25}
+        Dim result As List(Of Integer) = New List(Of Integer)
+        Dim posicion = 0
+
+        While monto > 0
+            If monto >= billetes(posicion) Then
+                result.Add(billetes(posicion))
+                monto -= billetes(posicion)
+            Else
+                posicion += 1
+            End If
+        End While
+
+        Console.WriteLine(String.Join(",", result))
     End Sub
 
 End Module
