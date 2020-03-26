@@ -151,6 +151,7 @@
     <Compile Include="Recursividad\PrintTriangularTree.vb" />
     <Compile Include="SampleObject\IMessage.vb" />
     <Compile Include="SampleObject\Message.vb" />
+    <Compile Include="StringT.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

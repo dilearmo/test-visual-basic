@@ -117,13 +117,17 @@
 
         'SumaMatriz(0, 0)
 
-        Dim matrix As Integer(,) = {
-            {1, 2, 3, 4},
-            {2, 8, 3, 3},
-            {3, 3, 5, 2},
-            {4, 3, 2, 3}}
+        'Dim matrix As Integer(,) = {
+        '    {1, 2, 3, 4},
+        '    {2, 8, 3, 3},
+        '    {3, 3, 5, 2},
+        '    {4, 3, 2, 3}}
 
-        Console.WriteLine($"¿La matriz es de lados iguales?... {ValidateMatrixSides(matrix)}")
+        'Console.WriteLine($"¿La matriz es de lados iguales?... {ValidateMatrixSides(matrix)}")
+
+
+        Dim result = StringT.GetMaxTStringLength("baeefeeebeab")
+        Console.WriteLine($"The longest T string length is {result}")
 
         Console.Read()
 
