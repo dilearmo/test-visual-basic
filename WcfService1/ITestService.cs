@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace WcfService1
 {
     [ServiceContract]
-    interface ITestService
+    interface ITestService : IService1
     {
         [OperationContract]
         void test(int value);

@@ -39,4 +39,23 @@
         End If
     End Function
 
+    Public Shared Sub MayorRepeticionesBrandon(list As List(Of Integer))
+        Dim dic As New Dictionary(Of Integer, Integer)
+        Dim mayor
+
+        If list.Count <= 0 Then
+            Return
+        End If
+        For i = 0 To list.Count - 1
+            If dic.ContainsKey(list(i)) Then
+                dic(list(i)) += 1
+            Else
+                dic.Add(list(i), 1)
+            End If
+        Next
+
+        mayor = dic.OrderByDescending(Function(x) x.Value).FirstOrDefault()
+        Console.WriteLine($"El número con mayor repeticiones es el {mayor.key} con {mayor.value} repeticiones")
+    End Sub
+
 End Class

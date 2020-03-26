@@ -105,19 +105,56 @@
 
 #Region "Grafos"
 
-        Dim grafo = Graph.GetGraph()
-        grafo.Iterate()
+        'Dim grafo = Graph.GetGraph()
+        'grafo.Iterate()
 
 
-        Billetes(65825)
+        'Billetes(65825)
 
-        Console.Read()
+        'Console.Read()
 
 #End Region
 
+        'SumaMatriz(0, 0)
 
+        Dim matrix As Integer(,) = {
+            {1, 2, 3, 4},
+            {2, 8, 3, 3},
+            {3, 3, 5, 2},
+            {4, 3, 2, 3}}
+
+        Console.WriteLine($"¿La matriz es de lados iguales?... {ValidateMatrixSides(matrix)}")
+
+        Console.Read()
 
     End Sub
+
+    Public Sub SumaMatriz(ByRef suma As Integer, fila As Integer)
+        Dim Matriz(,) As Integer = {{2, 4, 6}, {9, 5, 1}, {7, 4, 4}, {2, 0, 6}}
+        If fila > UBound(Matriz) Then
+            Return
+        End If
+
+        For i = 0 To UBound(Matriz, 2)
+            suma += Matriz(fila, i)
+        Next
+        SumaMatriz(suma, fila + 1)
+    End Sub
+
+    Public Function ValidateMatrixSides(matrix As Integer(,),
+                                        Optional row As Integer = 0,
+                                        Optional ByRef res As Boolean = True) As Boolean
+        If row < matrix.GetLength(0) Then
+            For col = 1 To matrix.GetLength(0) - 1
+                If matrix(row, col) <> matrix(col, row) Then
+                    res = False
+                End If
+            Next
+            ValidateMatrixSides(matrix, row + 1, res)
+        End If
+        Return res
+    End Function
+
 
     Public Sub Billetes(monto As Integer)
         Dim billetes As Integer() = {5000, 2000, 1000, 500, 100, 25}

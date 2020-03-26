@@ -5,10 +5,9 @@ Public Class TestExamen10
 
     <TestMethod()>
     Public Sub EsNumeroPermitidoTest()
-        Dim resultado As Boolean = True
         Dim numero As Byte = 1
-        Dim resultadoEsperado = True
-        resultado = Validador.EsNumeroPermitido(numero)
+        Dim resultadoEsperado = False
+        Dim resultado = Validador.EsNumeroPermitido(numero)
         Assert.AreEqual(resultadoEsperado, resultado)
     End Sub
 

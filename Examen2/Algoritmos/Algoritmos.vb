@@ -143,5 +143,82 @@
 
 #End Region
 
+    Public Shared Sub InvertirClaribel(ByVal texto As String)
+        Dim aux As String()
+        Dim res As String
+        aux = texto.Split(" ")
+
+        For x = 0 To aux.Length - 1
+            res = res + " " + aux(x)
+        Next
+        Console.WriteLine(res)
+    End Sub
+
+    Public Shared Sub recorridoClaribel(arbol As Nodo)
+        If arbol.nivel?.Count > 0 Then
+            For x As Integer = 0 To arbol.nivel.Count - 1
+                recorridoClaribel(arbol.nivel(x))
+            Next
+        End If
+        Console.WriteLine(arbol.dato)
+    End Sub
+
+    Public Shared Sub BiciestoClaribel(anno As Integer)
+        Dim res = False
+        Dim aux As Decimal = anno Mod 4
+        If aux = 0 Then
+            Dim multiplo = anno Mod 100
+            If multiplo <> 0 Then
+                multiplo = anno Mod 400
+                If multiplo = 0 Then
+                    res = True
+                End If
+            End If
+        End If
+        Console.WriteLine(res)
+    End Sub
+
+    Public Shared Sub ProgramaClaribel(pos As Integer)
+        Dim vector(pos) As Integer
+        For i = 0 To pos - 1
+            Dim par As Integer = i Mod 2
+            If par = 0 Then
+                vector(i) = i * i + 1
+            Else
+                vector(i) = 3 * (i + 1)
+            End If
+        Next
+        MostrarVectorClaribel(vector)
+        Dim cont As Integer = 0, imp = pos - 1
+        Dim nuevo(pos) As Integer
+        For x = pos - 1 To 0 Step -1
+            Dim par = x Mod 2
+            If par = 0 Then
+                nuevo(cont) = vector(x)
+                cont += 1
+            Else
+                nuevo(imp) = vector(x)
+                imp -= 1
+            End If
+        Next
+        MostrarVectorClaribel(nuevo)
+    End Sub
+
+    Private Shared Sub MostrarVectorClaribel(vector As Integer())
+        For Each a In vector
+            Console.Write($"{a} ")
+        Next
+        Console.WriteLine()
+    End Sub
 #End Region
+End Class
+
+Public Class Nodo
+    Public Property dato As Integer
+    Public Property nivel As List(Of Nodo)
+
+End Class
+
+Public Class Arbol
+    Public Property raiz As Nodo
 End Class

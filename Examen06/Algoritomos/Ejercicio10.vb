@@ -27,4 +27,20 @@
         Return salida
     End Function
 
+    Public Shared Function SumaMatrizBrandon(matriz As Integer(,))
+        Dim result As Integer
+        _SumaMatrizBrandon(0, result, matriz)
+        Return result
+    End Function
+
+    Private Shared Sub _SumaMatrizBrandon(fila As Integer, ByRef suma As Integer, arr(,) As Integer)
+        If fila > UBound(arr) Then
+            Return
+        End If
+        For i = 0 To UBound(arr, 2)
+            suma += arr(fila, i)
+        Next
+        _SumaMatrizBrandon(fila + 1, suma, arr)
+    End Sub
+
 End Class

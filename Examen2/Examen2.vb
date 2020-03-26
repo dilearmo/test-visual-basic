@@ -31,7 +31,31 @@
         'Console.WriteLine(Algoritmos.EsAnoBiciesto(1974))
         'Console.WriteLine(Algoritmos.EsAnoBiciesto(2000))
 
-        Algoritmos.PosicionVector(10)
+        'Algoritmos.PosicionVector(10)
+
+        'Algoritmos.InvertirClaribel("Diego es nombre mi Hola")
+
+        'Dim nodo1 As New Nodo With {.dato = 1}
+        'Dim nodo2 As New Nodo With {.dato = 2}
+        'Dim nodo3 As New Nodo With {.dato = 3}
+        'Dim nodo4 As New Nodo With {.dato = 4}
+        'Dim nodo5 As New Nodo With {.dato = 5}
+        'Dim nodo6 As New Nodo With {.dato = 6}
+        'Dim nodo7 As New Nodo With {.dato = 7}
+
+        'nodo5.nivel = New List(Of Nodo)({nodo7})
+        'nodo2.nivel = New List(Of Nodo)({nodo5})
+
+        'nodo4.nivel = New List(Of Nodo)({nodo6})
+
+        'nodo1.nivel = New List(Of Nodo)({nodo2, nodo3, nodo4})
+
+        'Algoritmos.recorridoClaribel(nodo1)
+
+        'Algoritmos.BiciestoClaribel(1974)
+        'Algoritmos.BiciestoClaribel(2000)
+
+        Algoritmos.ProgramaClaribel(10)
 
         Console.ReadLine()
 
